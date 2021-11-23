@@ -86,5 +86,12 @@ namespace FootballManager.Views
 
             }
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            var signin = new SigninPage();
+            signin.Show();
+            this.Close();
+        }
     }
 }

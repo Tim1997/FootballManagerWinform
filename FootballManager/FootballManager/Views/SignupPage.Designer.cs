@@ -34,6 +34,7 @@ namespace FootballManager.Views
             this.label1 = new System.Windows.Forms.Label();
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.tbEmail = new System.Windows.Forms.TextBox();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSignup
@@ -79,11 +80,22 @@ namespace FootballManager.Views
             this.tbEmail.Size = new System.Drawing.Size(131, 20);
             this.tbEmail.TabIndex = 7;
             // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(47, 90);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.TabIndex = 12;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
             // SignupPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(219, 126);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSignup);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -104,5 +116,6 @@ namespace FootballManager.Views
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.Button btnCancel;
     }
 }

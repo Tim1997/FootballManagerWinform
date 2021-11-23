@@ -42,7 +42,6 @@ namespace FootballManager.Views
             dbCustomers.Columns[2].Name = "Phone";
             dbCustomers.Columns[3].Name = "Sex";
             dbCustomers.Columns[4].Name = "Address";
-
         }
 
         async void LoadCustomers()
